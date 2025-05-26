@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import React, { useState } from "react";
 import { TextInput } from "react-native";
 import { router } from "expo-router";
@@ -20,7 +20,8 @@ const LoginPage = () => {
   const [gender, setGender] = useState("");
 
   return (
-    <View
+    <ScrollView showsVerticalScrollIndicator={false}>
+         <View
       style={{
         display: "flex",
         alignItems: "center",
@@ -39,12 +40,85 @@ const LoginPage = () => {
         value={age}
         style={styles.textInputStyle}
       />
+      
       <TextInput
         placeholder="Enter your gender"
         onChangeText={setGender}
         value={gender}
         style={styles.textInputStyle}
       />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      /><TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+      <TextInput
+        placeholder="Enter your gender"
+        onChangeText={setGender}
+        value={gender}
+        style={styles.textInputStyle}
+      />
+
       <TouchableOpacity
         style={{
           width: 100,
@@ -69,6 +143,8 @@ const LoginPage = () => {
         </Text>
       </TouchableOpacity>
     </View>
+    </ScrollView>
+ 
   );
 };
 
